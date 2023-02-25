@@ -6,9 +6,7 @@ export const Feed = () => {
     <Box flex={4} p={2} >
       <Post />
       <Post />
-
       <Post />
-
     </Box>
   )
 }

@@ -56,7 +56,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 export const Sidebar = () => {
   return (
-    <Box 
+    <Box
         flex={1} 
         p={2}
         sx={{
@@ -66,6 +66,7 @@ export const Sidebar = () => {
             }
         }}
     >
+      <Box position="fixed">
         <List>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#home">
@@ -139,6 +140,7 @@ export const Sidebar = () => {
           </ListItem>
 
         </List>
+        </Box>
     </Box>  
     )
 }
