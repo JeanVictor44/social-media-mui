@@ -54,7 +54,10 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     },
   }));
 
-export const Sidebar = () => {
+interface SidebarProps {
+  toggleTheme: () => void 
+}
+export const Sidebar = ({toggleTheme}: SidebarProps) => {
   return (
     <Box
         flex={1} 
@@ -135,7 +138,7 @@ export const Sidebar = () => {
             <ListItemButton>
             <ListItemText primary="Theme"/>
 
-             <MaterialUISwitch />
+             <MaterialUISwitch onClick={toggleTheme}/>
             </ListItemButton>
           </ListItem>
 

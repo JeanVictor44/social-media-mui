@@ -7,9 +7,5 @@ export const theme = createTheme({
         main: blue[800],
         light: "skyblue"
       },
-      secondary: {
-        main: "#15c630",
-
-      },
     }
 })
